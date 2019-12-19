@@ -1,5 +1,6 @@
-const assert = require('assert');
+// Ejemplo de un mosquito vivo que emite eventos... ;-p
 
+const assert = require('assert');
 
 class Event {
   constructor(name, payload) {
@@ -46,7 +47,6 @@ class EventEmitter {
 // ee.off('foo', console.log);
 // ee.emit('foo', 'baz');
 // console.log(ee);
-
 
 class LivingBeing extends EventEmitter {
   constructor({ heartRate, lifespan }) {

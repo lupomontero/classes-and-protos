@@ -1,13 +1,20 @@
+//
+// Todos los valores (en realidad casi todos) son objetos en JavaScript. En este
+// script hay una lista de todos los "tipos" que incluye el lenguaje (sin
+// incluir las librerías que agregan los entornos del host - ie: browser,
+// Node.js, ...)
+//
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+//
 
-// Value properties
+// Value properties (estos valores NO son objetos!)
 Infinity
 NaN
 undefined
 null
 globalThis
 
-// Function properties
+// Function properties (estas funciones NO son métodos - propiedad de un objeto)
 eval()
 isFinite()
 isNaN()
@@ -17,6 +24,8 @@ decodeURI()
 decodeURIComponent()
 encodeURI()
 encodeURIComponent()
+
+// ******************* TODO LO DEMÁS DON OBJETOS **************************** //
 
 // Fundamental objects
 Object

@@ -1,3 +1,5 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
 class Point {
   constructor(x, y) {
     this.x = x;
@@ -5,15 +7,13 @@ class Point {
   }
 
   static distance(a, b) {
-    const dx = a.x - b.x;
-    const dy = a.y - b.y;
-    return Math.hypot(dx, dy);
+    return Math.hypot(a.x - b.x, a.y - b.y);
   }
 }
 
 const p1 = new Point(5, 5);
 const p2 = new Point(10, 10);
-p1.distance; //undefined
-p2.distance; //undefined
 
-console.log(Point.distance(p1, p2)); // 7.0710678118654755
+// console.log(p1.distance); // undefined
+// console.log(p2.distance); // undefined
+// console.log(Point.distance(p1, p2)); // 7.0710678118654755

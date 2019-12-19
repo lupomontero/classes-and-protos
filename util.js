@@ -4,21 +4,21 @@ const getConstructorsChainHack = obj => (
     : [obj.__proto__.constructor.name].concat(getConstructorsChainHack(obj.__proto__))
 );
 
-const getConstructorsChain = (obj) => {
-  const proto = Object.getPrototypeOf(obj);
-  return (
-    !proto
-      ? []
-      : [proto.constructor.name].concat(getConstructorsChain(proto))
-  );
-};
-
 const getProtoChain = (obj) => {
   const proto = Object.getPrototypeOf(obj);
   return (
     !proto
       ? []
       : [proto].concat(getProtoChain(proto))
+  );
+};
+
+const getConstructorsChain = (obj) => {
+  const proto = Object.getPrototypeOf(obj);
+  return (
+    !proto
+      ? []
+      : [proto.constructor.name].concat(getConstructorsChain(proto))
   );
 };
 
@@ -77,8 +77,8 @@ const printTree = (constructors) => {
 
 
 module.exports = {
-  getConstructorsChain,
   getProtoChain,
+  getConstructorsChain,
   getProps,
   getTree,
   printTree,

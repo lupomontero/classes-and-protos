@@ -17,6 +17,6 @@ const makeAnonSubClass = C => class extends C {};
 // console.log(getConstructorsChain(new (makeAnonSubClass(Cat))()));
 
 const makeNamedSubClass = (C, name) => ({ [name]: class extends C {} })[name];
-const Siamese = makeNamedSubClass(Cat, 'Siamese');
+// const Siamese = makeNamedSubClass(Cat, 'Siamese');
 // console.log(new Siamese);
-console.log(getConstructorsChain(new (makeNamedSubClass(Cat, 'Siamese'))()));
+// console.log(getConstructorsChain(new (makeNamedSubClass(Cat, 'Siamese'))()));
