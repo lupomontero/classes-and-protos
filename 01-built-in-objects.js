@@ -25,7 +25,7 @@ decodeURIComponent()
 encodeURI()
 encodeURIComponent()
 
-// ******************* TODO LO DEMÁS DON OBJETOS **************************** //
+// ******************* TODO LO DEMÁS SON OBJETOS **************************** //
 
 // Fundamental objects
 Object
