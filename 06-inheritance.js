@@ -39,7 +39,7 @@ Canine.prototype.constructor = Canine;
 Canine.prototype.poop = function () {
   const superPoop = Mammal.prototype.poop.bind(this);
   return `${superPoop()}${superPoop()}`;
-}
+};
 
 function Dog() {}
 Dog.prototype = Object.create(Canine.prototype);
