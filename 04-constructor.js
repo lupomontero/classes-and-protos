@@ -8,12 +8,12 @@ const Dog = function () {};
 
 const PerroLobo = function CanisLupus() {};
 // console.log(new PerroLobo()); // -> CanisLupus {}
-// CanisLupus is not defined!!
+// CanisLupus no está definido!!
 // console.log(new CanisLupus());
 // console.log(PerroLobo.name);
 
 const Fox = () => {};
-// FOX is not a constructor!!
+// FOX no es un constructor!!
 // console.log(new Fox());
 
 function Rabbit() {}
