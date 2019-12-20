@@ -4,7 +4,11 @@ const Animal = class {};
 // console.log(Animal);
 // console.log(getConstructorsChain(new Animal()));
 
-const Cat = class extends Animal {};
+const Cat = class extends Animal {
+  meow() {
+    return 'miau';
+  }
+};
 // console.log(Cat);
 // console.log(getConstructorsChain(new Cat()));
 
